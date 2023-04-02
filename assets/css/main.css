@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.miNav {
+    background-image: url(../img/banner.jpg);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0;
+
+    
+}
+
+.estiloOpciones {
+    list-style-type: none;
+}
+
+.estiloOpciones li {
+    display: inline;
+}
+
+.estiloOpciones li a {
+    width: 160px;
+    color: #ffffff;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}

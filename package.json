@@ -1,0 +1,28 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Proyecto con Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea" : "gulp tarea"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianRodriguez02/Blog.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Sebastian Suarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianRodriguez02/Blog/issues"
+  },
+  "homepage": "https://github.com/SebastianRodriguez02/Blog#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.51.0"
+  }
+}
