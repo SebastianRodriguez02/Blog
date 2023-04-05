@@ -1,0 +1,23 @@
+@use 'base/variables';
+@use 'base/mixins';
+
+.header {
+    background-color: variables.$verde;
+
+    h1 {
+        color: variables.$blanco;
+    }
+}
+
+.navegacion-principal {
+    a {
+        color: variables.$blanco;
+        font-size: 2.4rem;
+
+        &:hover {
+            color: variables.$amarillo;
+        }
+    }
+
+}
+
