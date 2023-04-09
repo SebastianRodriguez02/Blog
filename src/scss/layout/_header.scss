@@ -10,6 +10,9 @@
 }
 
 .navegacion-principal {
+    @include mixins.telefono {
+        
+    }
     a {
         color: variables.$blanco;
         font-size: 2.4rem;
