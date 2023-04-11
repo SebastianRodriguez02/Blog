@@ -6,17 +6,37 @@
 
     h1 {
         color: variables.$blanco;
+        text-align: center;
+        @include mixins.tablet {
+            margin: 0;
+        }
+        
+    }
+    .contenido-header {
+        padding: 2rem;
+        @include mixins.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
 .navegacion-principal {
-    @include mixins.telefono {
-        
+    @include mixins.tablet {
+        display: flex;
+        gap: 2rem;
     }
+    
     a {
+        display: block;
+        text-align: center;
         color: variables.$blanco;
         font-size: 2.4rem;
-
+        margin-bottom: 1rem;
+        @include mixins.tablet {
+            margin: 0;
+        }
         &:hover {
             color: variables.$amarillo;
         }
