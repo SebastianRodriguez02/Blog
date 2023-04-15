@@ -13,6 +13,13 @@ html {
 body {
     font-family: variables.$fuente_principal;
     font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+    &.body-scroll {
+        padding-top: 8.6rem;
+    }
 }
 
 p {

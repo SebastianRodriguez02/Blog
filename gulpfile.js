@@ -1,4 +1,4 @@
-const { src, dest, watch} = require ("gulp");
+const { src, dest, watch, parallel} = require ("gulp");
 const sass = require("gulp-sass") (require('sass'));
 const plumber = require('gulp-plumber');
 
@@ -11,9 +11,20 @@ function css (done) {
     done (); // callback que avisa a gulp cuando llegamos al final
 }
 
-function dev(done){
-    watch("src/scss/**/*.scss", css)
+function javascript( done ) {
+  src('src/js/**/*.js')
+      .pipe(dest('build/js'));
+      
+  done();
+}
+
+function dev( done ){
+    watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
+    done();
 }
 
 exports.css = css;
-exports.dev = dev;
+exports.js = javascript;
+exports.dev = parallel(javascript, dev);
+
