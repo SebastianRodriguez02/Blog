@@ -1,4 +1,4 @@
-*# 📝 Mi Blog Personal
+*# 📝 Blog Concierto
 
 ## 📖 Descripción del Proyecto
 Este repositorio contiene el código fuente de mi primer Blog estático. Es un proyecto de desarrollo Front-End centrado en la creación de una interfaz web estructurada y visualmente agradable.
